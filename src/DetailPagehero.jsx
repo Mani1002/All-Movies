@@ -94,7 +94,7 @@ export default function DetailPagehero({ movie }) {
         {/* 🎮 Action Buttons */}
         <div className="flex gap-4 mt-6">
           {/* ▶ Play Button */}
-          <button className="bg-[#F28500] px-5 py-2 rounded-full hover:bg-[#ff9933] transition flex gap-2 items-center">
+          <button className="bg-[#F28500] px-5 py-2 rounded-full hover:bg-[#ff9933] transition flex gap-2 items-center cursor-pointer">
             <span>
               {/* ▶ Play SVG */}
               <svg
@@ -118,7 +118,7 @@ export default function DetailPagehero({ movie }) {
           {/* ➕ / ✅ My List Button */}
           <button
             onClick={toggleFavourite}
-            className={`flex items-center gap-2 px-5 py-2 rounded-full transition ${
+            className={`flex items-center gap-2 px-5 py-2 rounded-full transition cursor-pointer ${
               isFavourite
                 ? "bg-green-600 hover:bg-green-700"
                 : "bg-gray-800 hover:bg-gray-700"
